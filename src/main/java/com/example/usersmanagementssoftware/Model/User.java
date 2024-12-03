@@ -40,7 +40,7 @@ public class User {
 
     @NotEmpty(message = "role is required")
     @Pattern(regexp = "user|admin",message = "please role must be user or admin.")
-    @Column(columnDefinition = "varchar(10) unique not null")
+    @Column(columnDefinition = "varchar(10) not null")
     private String role;
 
     @Positive
